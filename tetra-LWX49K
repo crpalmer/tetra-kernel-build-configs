@@ -1,0 +1,6 @@
+prebuilt_dir=~/kernel-build-configs/tetra-LWX49K.unpack
+DEFCONFIG=cyanogenmod_tetra_defconfig
+O=/data/tetra/kernel.out
+#DT=$O/arch/arm/boot/dts/*.dtb
+RAMDISK=$prebuilt_dir/ramdisk.gz
+. $prebuilt_dir/img_info
