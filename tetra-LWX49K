@@ -1,4 +1,4 @@
-prebuilt_dir=~/kernel-build-configs/tetra-LWX49K.unpack
+prebuilt_dir=~/kernel-build-configs/tetra/tetra-LWX49K.unpack
 DEFCONFIG=cyanogenmod_tetra_defconfig
 O=/data/tetra/kernel.out
 #DT=$O/arch/arm/boot/dts/*.dtb
