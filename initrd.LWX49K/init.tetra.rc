@@ -208,10 +208,10 @@ on property:dev.bootcomplete=1
     chmod 660 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
     chmod 660 /sys/devices/system/cpu/cpufreq/interactive/timer_slack
     chmod 220 /sys/devices/system/cpu/cpufreq/interactive/boostpulse
-    write /sys/devices/system/cpu/simple_plug/active 1
-    write /sys/devices/system/cpu/simple_plug/sampling_ms 50
 #    start copy_cp_imgs
 # Remove boot up MEMC DFS turbo req - ENABLE MEMC DFS by default
     write /sys/power/memc_dfs_init 1
+    write /sys/devices/system/cpu/simple_plug/sampling_ms 50
+    write /sys/devices/system/cpu/simple_plug/active 1
     start  nfctagmodify
     start key_vibrate
