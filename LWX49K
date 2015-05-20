@@ -1,5 +1,5 @@
 prebuilt_dir=~/tetra-kernel-build-configs/
-DEFCONFIG=cyanogenmod_tetra_defconfig
+DEFCONFIG=tetra_stock_defconfig
 O=/data/tetra/kernel.out
 #DT=$O/arch/arm/boot/dts/*.dtb
 INITRD=$prebuilt_dir/initrd.LWX49K
