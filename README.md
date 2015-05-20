@@ -6,10 +6,10 @@ You need:
 * This repo checked out in your home directory.
   To build a specific release checkout that release tag (e.g. r1).
 
-* http://github.com/android-kernel-build-tools
+* http://github.com/crpalmer/android-kernel-build-tools
   (branch master checked out in your home directory)
 
-* http://github.com/android_kernel_sony_tetra
+* http://github.com/crpalmer/android_kernel_sony_tetra
   To build a specific release checkout that release tag (e.g. r1).
 
 And then run
