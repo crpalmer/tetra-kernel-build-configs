@@ -1,0 +1,8 @@
+prebuilt_dir=~/tetra-kernel-build-configs/
+DEFCONFIG=tetra_stock_defconfig
+O=/data/tetra/kernel.out
+#DT=$O/arch/arm/boot/dts/*.dtb
+INITRD=$prebuilt_dir/initrd.LWX49K
+page_size=2048
+base_addr=0x82000000
+ramdisk_addr=0x83000000
