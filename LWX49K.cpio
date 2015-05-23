@@ -1,0 +1,32 @@
+file /init.tetra.usb.rc /tmp/good/ramdisk/init.tetra.usb.rc 750 1000 1000
+dir /proc 755 1000 1000
+slink /charger /sbin/healthd 644 1000 1000
+file /init.trace.rc /tmp/good/ramdisk/init.trace.rc 750 1000 1000
+file /sepolicy /tmp/good/ramdisk/sepolicy 644 1000 1000
+file /seapp_contexts /tmp/good/ramdisk/seapp_contexts 644 1000 1000
+file /init.zygote32.rc /tmp/good/ramdisk/init.zygote32.rc 750 1000 1000
+file /ueventd.tetra.rc /tmp/good/ramdisk/ueventd.tetra.rc 644 1000 1000
+file /selinux_version /tmp/good/ramdisk/selinux_version 644 1000 1000
+file /fstab.tetra /tmp/good/ramdisk/fstab.tetra 640 1000 1000
+file /init.tetra.debug.rc /tmp/good/ramdisk/init.tetra.debug.rc 750 1000 1000
+file /file_contexts /tmp/good/ramdisk/file_contexts 644 1000 1000
+file /init.rc /tmp/good/ramdisk/init.rc 750 1000 1000
+file /init.tetra.rc /tmp/good/ramdisk/init.tetra.rc 750 1000 1000
+file /init /tmp/good/ramdisk/init 750 1000 1000
+file /property_contexts /tmp/good/ramdisk/property_contexts 644 1000 1000
+file /init.environ.rc /tmp/good/ramdisk/init.environ.rc 750 1000 1000
+dir /dev 755 1000 1000
+dir /sys 755 1000 1000
+dir /system 755 1000 1000
+dir /sbin 750 1000 1000
+file /sbin/healthd /tmp/good/ramdisk/sbin/healthd 750 1000 1000
+slink /sbin/ueventd ../init 750 1000 1000
+slink /sbin/watchdogd ../init 750 1000 1000
+file /sbin/adbd /tmp/good/ramdisk/sbin/adbd 750 1000 1000
+file /sbin/tad_static /tmp/good/ramdisk/sbin/tad_static 750 1000 1000
+file /sbin/wait4tad_static /tmp/good/ramdisk/sbin/wait4tad_static 750 1000 1000
+file /default.prop /tmp/good/ramdisk/default.prop 644 1000 1000
+dir /data 771 1000 1000
+file /init.usb.rc /tmp/good/ramdisk/init.usb.rc 750 1000 1000
+file /ueventd.rc /tmp/good/ramdisk/ueventd.rc 644 1000 1000
+file /service_contexts /tmp/good/ramdisk/service_contexts 644 1000 1000
