@@ -211,7 +211,10 @@ on property:dev.bootcomplete=1
 #    start copy_cp_imgs
 # Remove boot up MEMC DFS turbo req - ENABLE MEMC DFS by default
     write /sys/power/memc_dfs_init 1
-    write /sys/devices/system/cpu/simple_plug/sampling_ms 50
-    write /sys/devices/system/cpu/simple_plug/active 1
+# Disable cpu2 and cpu3
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    chmod 0000 /sys/devices/system/cpu/cpu2/online
+    chmod 0000 /sys/devices/system/cpu/cpu3/online
     start  nfctagmodify
     start key_vibrate
