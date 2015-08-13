@@ -1,0 +1,7 @@
+prebuilt_dir=~/tetra-kernel-build-configs/
+DEFCONFIG=tetra_stock_defconfig
+O=/data/tetra/kernel.out
+INITRD=$prebuilt_dir/initrd.LDZ22D
+page_size=2048
+base_addr=0x82000000
+ramdisk_addr=0x83000000

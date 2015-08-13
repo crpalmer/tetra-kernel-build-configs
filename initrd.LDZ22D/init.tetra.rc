@@ -1,0 +1,15 @@
+on charger
+    mount_all /fstab.tetra
+
+on fs
+    mount_all /fstab.tetra
+
+service nfctagmodify /system/bin/T2tNdefWrite
+    user nfc
+    disabled
+    oneshot
+
+on property:dev.bootcomplete=1
+    start nfctagmodify
+
+import /init.common.rc
