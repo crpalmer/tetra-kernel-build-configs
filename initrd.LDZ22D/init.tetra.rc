@@ -3,6 +3,7 @@ on charger
 
 on fs
     mount_all /fstab.tetra
+    swapon_all /fstab.tetra
 
 service nfctagmodify /system/bin/T2tNdefWrite
     user nfc
