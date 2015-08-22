@@ -225,6 +225,11 @@ on property:dev.bootcomplete=1
     chmod 660 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
     chmod 660 /sys/devices/system/cpu/cpufreq/interactive/timer_slack
     chmod 220 /sys/devices/system/cpu/cpufreq/interactive/boostpulse
+
+    # Configure interactive governor
+    write /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 50
+    write /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq 800000
+
 #    start copy_cp_imgs
 # Remove boot up MEMC DFS turbo req - ENABLE MEMC DFS by default
     write /sys/power/memc_dfs_init 1
